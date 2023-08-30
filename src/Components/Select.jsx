@@ -4,7 +4,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-
+import "../App.css";
 export default function BasicSelect() {
   const [age, setAge] = React.useState("");
 
@@ -23,6 +23,7 @@ export default function BasicSelect() {
           value={age}
           //   label="Age"
           onChange={handleChange}
+          className="minimize-height"
         >
           <MenuItem value={2}>Two</MenuItem>
           <MenuItem value={1}>One</MenuItem>

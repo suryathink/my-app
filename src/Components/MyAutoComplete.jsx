@@ -2,7 +2,7 @@ import * as React from "react";
 import TextField from "@mui/material/TextField";
 import { Autocomplete, InputAdornment } from "@mui/material";
 import BasicSelect from "./Select";
-import "../App.css"
+import "../App.css";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 
 export default function ComboBox() {
