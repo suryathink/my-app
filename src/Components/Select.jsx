@@ -14,23 +14,36 @@ export default function BasicSelect() {
 
   return (
     // <div style={{ width: "80px", height: "50px", border: "2px solid red" }}>
-    <Box sx={{ minWidth: 80, maxWidth: 150, minHeight: 50, maxHeight: 250 }}>
-      <FormControl>
-        {/* <InputLabel id="demo-simple-select-label">Age</InputLabel> */}
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={age}
-          //   label="Age"
-          onChange={handleChange}
-          className="minimize-height"
-        >
-          <MenuItem value={2}>Two</MenuItem>
-          <MenuItem value={1}>One</MenuItem>
-          <MenuItem value={6}>Six</MenuItem>
-        </Select>
-      </FormControl>
-    </Box>
+    // <Box sx={{ minWidth: 80, maxWidth: 150, minHeight: 50, maxHeight: 250 }}>
+    //   <FormControl>
+    //     {/* <InputLabel id="demo-simple-select-label">Age</InputLabel> */}
+    //     <Select
+    //       labelId="demo-simple-select-label"
+    //       id="demo-simple-select"
+    //       value={age}
+    //       //   label="Age"
+    //       onChange={handleChange}
+    //       className="minimize-height"
+    //     >
+    //       <MenuItem value={2}>Two</MenuItem>
+    //       <MenuItem value={1}>One</MenuItem>
+    //       <MenuItem value={6}>Six</MenuItem>
+    //     </Select>
+    //   </FormControl>
+    // </Box>
     // </div>
+
+    <Select
+      labelId="demo-simple-select-label"
+      id="demo-simple-select"
+      value={age}
+      onChange={handleChange}
+      className="minimize-height"
+      style={{ minWidth: 80, maxWidth: 150, minHeight: 50, maxHeight: 250 }}
+    >
+      <MenuItem value={2}>Two</MenuItem>
+      <MenuItem value={1}>One</MenuItem>
+      <MenuItem value={6}>Six</MenuItem>
+    </Select>
   );
 }
